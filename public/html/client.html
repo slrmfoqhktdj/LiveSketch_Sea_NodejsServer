@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Client</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta name="viewport"
+      content="width=device-width,initial-scale=1.0,
+      minimum-scale=1.0,maximum-scale=1.0" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./build/three.module.js"
+        }
+      }
+    </script>
+  </head>
+ 
+  <body style="margin:0;padding:0;overflow:hidden">
+
+
+    <div class="top">
+      <div class="img_box" id="fish_box">
+        <img src="fish.png">
+      </div>
+      <div class="img_box" id="shark_box">
+        <img src="shark.png">
+      </div>
+    </div>
+    <div class="main">
+      <div class="left">
+        <input class="head_left" type="button" value="<">
+        <input class="upper_left" type="button" value="<">
+      </div>
+      <canvas id="canvas"></canvas>
+      <div class="right">
+        <input class="head_right" type="button" value=">">
+        <input class="upper_right" type="button" value=">">
+      </div>
+    </div>
+    <div class="bottom">
+      <input class="sendC" type="button" value="submit">
+    </div>
+ 
+    
+    <script type="module" src="client.js"></script>
+    <link href="client.css" rel="stylesheet" type="text/css" />
+  </body>
+</html> 
